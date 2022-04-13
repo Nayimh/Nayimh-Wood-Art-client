@@ -1,0 +1,33 @@
+.about{
+    background-color: #ffffff;
+}
+
+.headingt{
+    letter-spacing: 5px;
+     font-weight: 700;
+     font-size: 3rem;
+     text-shadow: 2px 1px 2px gray;
+     /* color: rgb(21, 222, 253); */
+     color: #19a9ec;
+    
+}
+
+.aboutH{
+    /* color: rgb(21, 222, 253); */
+    text-shadow: 2px 1px 2px gray;
+    font-weight: 600;
+}
+
+.aboutP{
+    color: rgb(2, 19, 22);
+}
+
+.aboutimg{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.acenter{
+    display: grid;
+    justify-content: center;
+}

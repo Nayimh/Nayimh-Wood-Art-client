@@ -1,0 +1,9 @@
+.poster{
+   background-color: rgb(189, 239, 247);
+   /* padding: 3rem 2rem; */
+}
+
+.posterImg{
+    width: 100%;
+    border-radius: 5px;
+}

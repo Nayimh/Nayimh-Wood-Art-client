@@ -1,0 +1,22 @@
+.foodcard{
+    height: 30rem;
+   
+}
+
+
+
+
+.foodcard:hover{
+    background-color: #ebf8ff;
+    box-shadow: -5px 14px 30px 6px gray;
+    /* margin-top: -20px; */
+    border: 1px solid black;
+
+    /* transition: ease-in 10ms; */
+    
+}
+
+.cardimg{
+    height: 12rem;
+    object-fit: cover;
+}
