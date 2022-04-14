@@ -3,6 +3,7 @@ import './NavMenu.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Firebase/Hooks/useAuth';
+import {FiLogOut} from 'react-icons/fi'
 
 const NavMenu = () => {
   const { user, logout } = useAuth();
@@ -33,9 +34,10 @@ const NavMenu = () => {
               {user?.email ? (
                 <Nav.Link >
                   <button className="logBtn" onClick={logout}>
-                    Logout
+                    Logout<FiLogOut/>
                   </button>
-                </Nav.Link>
+                  </Nav.Link>
+                  
               ) : (
                 <Nav.Link as={Link} to="/login">
                   <button className="logBtn">Login</button>

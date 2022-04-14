@@ -19,6 +19,7 @@ import { MdManageAccounts } from "react-icons/md";
 import { MdAddShoppingCart } from "react-icons/md";
 import { FaShoppingBasket } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
+import { FcRating } from "react-icons/fc";
 
 
 import { Link, Outlet } from 'react-router-dom';
@@ -41,11 +42,14 @@ const Dashboard = (props) => {
   
     const drawer = (
       <div>
-            <Toolbar />
-            <List className='bg' sx={{boxShadow: 3}}>
+        
+        <Toolbar />
+
+        <List className='bg' sx={{ boxShadow: 3 }}>
+          
                 <ListItem>
                 
-                    <h4 className='cgHead' style={{ color: '#000', boxShadow: 1, padding: '1rem' }}>{user?.displayName}  </h4>
+                    <h4 className='cgHead' style={{ color: '#000', boxShadow: 1, padding: '1rem' }}> {user?.displayName}  </h4>
                 </ListItem>
                    
                 
@@ -78,10 +82,12 @@ const Dashboard = (props) => {
             <ListItem>
             <Link className='dashLink' to={`/dashboard/myOrder`}><p style={{color: '#000', letterSpacing: '1px'}}>MY ORDERS <FaShoppingBasket/> </p></Link>
                 
-            </ListItem>
+          </ListItem>
+          
+          
         
             <ListItem>
-            <Link className='dashLink' to={`/home`}><button className='btn' onClick={logout} style={{color: '#000', letterSpacing: '1px'}}>LOGUT <FiLogOut/> </button></Link>
+            <Link className='dashLink' to={`/home`}><button className='btn' onClick={logout} style={{color: '#c2185b', letterSpacing: '1px'}}>LOGUT <FiLogOut/> </button></Link>
                 
                 </ListItem>
                 </List>
@@ -90,11 +96,15 @@ const Dashboard = (props) => {
                 <List>
                     <ListItem>
                 
-                <Link className='dashLink' to={`/home`}><p style={{color: '#c2185b', letterSpacing: '1px', }}>Home <AiFillHome/> </p></Link>
+                <Link className='dashLink' to={`/home`}><p style={{color: '#000', letterSpacing: '1px', }}>Home <AiFillHome/> </p></Link>
                     
                 </ListItem>
                     <ListItem>
-            <Link className='dashLink' to={`/dashboards/myOrder`}><p style={{color: '#c2185b', letterSpacing: '1px'}}>MY ORDERS <FaShoppingBasket/> </p></Link>
+            <Link className='dashLink' to={`/dashboard/myOrder`}><p style={{color: '#000', letterSpacing: '1px'}}>MY ORDERS <FaShoppingBasket/> </p></Link>
+                
+            </ListItem>
+                    <ListItem>
+            <Link className='dashLink' to={`/dashboard/rating`}><p style={{color: '#000', letterSpacing: '1px'}}>Ratings  <FcRating/> </p></Link>
                 
             </ListItem>
         
@@ -175,7 +185,10 @@ const Dashboard = (props) => {
         >
           <Toolbar />
           <Typography className='bg' sx={{ boxShadow: 3, padding: '3rem' }}>
-            <h1  className=' text-center bannerHeading'>Welcome to Dashboard</h1>
+         
+            <h1 className=' text-center bannerHeading'>Welcome to Dashboard
+              
+            </h1>
                 </Typography>
           
                 <div className="col-sm-12 col-lg-12" style={{ minHeight: "100vh" }}>

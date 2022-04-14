@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import useAuth from '../../../../Firebase/Hooks/useAuth';
 import { Link, useNavigate } from 'react-router-dom';
 import { Badge, Form, Spinner } from 'react-bootstrap';
+import {FiLogIn} from 'react-icons/fi'
 
 const Register = () => {
     useEffect(() => {
@@ -111,7 +112,7 @@ const Register = () => {
                 </Form.Group>
 
                 <button type="submit" className="contactBtn">
-                  Register
+                  Register <FiLogIn/>
                 </button>
               </Form>
             )}

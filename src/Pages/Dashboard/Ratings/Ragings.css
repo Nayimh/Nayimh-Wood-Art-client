@@ -1,0 +1,12 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#bt{
+    width: 25%;
+    margin: auto;
+}

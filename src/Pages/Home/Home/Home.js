@@ -6,6 +6,7 @@ import SubBanner from '../Banner/SubBanner/SubBanner';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import AllHomeProducts from '../HomeProduct/AllHomeProducts/AllHomeProducts';
+import HomeRating from '../HomeRating/HomeRating';
 import NavMenu from '../NavMenu/NavMenu';
 // import Poster from '../Poster/Poster';
 
@@ -18,6 +19,7 @@ const Home = () => {
             <hr />
             <AllHomeProducts/>
             {/* <Poster /> */}
+            <HomeRating/>
             <About/>
             <Contact /> 
            

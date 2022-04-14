@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import useAuth from '../../../../Firebase/Hooks/useAuth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Badge, Form, Spinner } from 'react-bootstrap';
+import {FiLogIn} from 'react-icons/fi'
 
 const Login = () => {
  useEffect(() => {
@@ -85,7 +86,7 @@ const Login = () => {
                     controlId="formBasicCheckbox"
                   ></Form.Group>
                   <button type="submit" className="contactBtn">
-                    Login
+                    Login   <FiLogIn/>
                   </button>
                 </Form>
               )}
@@ -105,7 +106,7 @@ const Login = () => {
                 className="contactBtn"
                 onClick={handleGoogleSignin}
               >
-                Google Sign In
+                Google Sign In   <FiLogIn/>
               </button>
   
               <div className="text-danger shadow mt-3 rounded p-1">

@@ -1,0 +1,9 @@
+.rcard{
+    /* height: 12rem; */
+    border: 1px solid white;
+}
+
+.rcard:hover{
+    box-shadow: 6px 2px 15px black;
+    border: 1px solid black;
+}

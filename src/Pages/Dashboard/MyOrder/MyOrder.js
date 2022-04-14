@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import {  Table } from 'react-bootstrap';
 import useAuth from '../../../Firebase/Hooks/useAuth';
+
+import {RiDeleteBin6Line} from 'react-icons/ri'
+import {MdPayment} from 'react-icons/md'
 
 const MyOrder = () => {
 
@@ -13,6 +16,10 @@ const MyOrder = () => {
         .then((data) => setOrderItem(data));
     }, [user?.email]);
   
+ 
+  const handlePayment = () => {
+    alert('Payment Method Coming Soon')
+    }
    
     const handleDelete = (id) => {
       const url = `https://serene-everglades-89059.herokuapp.com/orders/${id}`;
@@ -60,7 +67,9 @@ const MyOrder = () => {
                     <td>{pl.status === "Pending" ? <p>Pending</p> : <p>Accepted</p> }</td>
                     <td className="text-center">
                     
-                        <button className="btn btn-danger ms-2" onClick={ () => handleDelete(pl._id)}>cancel</button>
+                      <button className="btn btn-danger ms-2" onClick={() => handleDelete(pl._id)}> <RiDeleteBin6Line /> </button>
+                      <button className='btn btn-success ms-2' onClick={() => handlePayment()}> <MdPayment/> </button>
+                      
                     </td>
                 </tr>
             </tbody>

@@ -6,6 +6,9 @@ import ManageAllProduct from '../ManageAllProduct/ManageAllProduct';
 import MyOrder from '../MyOrder/MyOrder';
 import AddNewProduct from '../AddNewProduct/AddNewProduct'
 
+import Ratings from '../Ratings/Ratings';
+import HomeRating from '../../Home/HomeRating/HomeRating';
+
 const TrialD = () => {
     return (
         <div>
@@ -14,7 +17,9 @@ const TrialD = () => {
             <MyOrder />
             <ManageAllOrder />
             <ManageAllProduct />
-            <AddNewProduct/>
+            <AddNewProduct />
+            <Ratings />
+            <HomeRating/>
         </div>
     );
 };

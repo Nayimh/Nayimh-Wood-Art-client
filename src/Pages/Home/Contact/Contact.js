@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Contact.css';
 import img from '../../../image/contact.png';
 import { Form } from 'react-bootstrap';
+import {FiSend} from 'react-icons/fi'
 
 import AOs from 'aos';
 import 'aos/dist/aos.css';
@@ -34,7 +35,7 @@ const Contact = () => {
       style={{ height: '100px' }}
     />
  <br />
-  <button className="contactBtn">Submit</button>
+  <button className="contactBtn w-25">Submit <FiSend/> </button>
 </Form>
                 </div>
                 <div data-aos='zoom-in-up' data-aos-duration='1500' className='col-lg-6 col-md-6 col-sm-12 p-4 text-center'>

@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import useAuth from '../../../Firebase/Hooks/useAuth';
 
+import { TiTick } from 'react-icons/ti';
+
+import { RiDeleteBin6Line } from 'react-icons/ri';
+import { BiEdit } from 'react-icons/bi';
+
 const ManageAllOrder = () => {
 
     const { user } = useAuth();
@@ -99,11 +104,11 @@ const ManageAllOrder = () => {
                     <td>{pl.phone}</td>
                     <td>{pl.status === "Pending" ? <p>Pending</p> : <p>Accepted</p> }</td>
                     <td className="text-center">
-                      {pl.status === "Pending" ? <button onClick={() => handleUpdate(pl._id)} className="btn btn-success me-2" >Accept</button>
+                      {pl.status === "Pending" ? <button onClick={() => handleUpdate(pl._id)} className="btn btn-success me-2" ><TiTick/></button>
                         
                          
                         :
-                        <button className="btn btn-danger ms-2" onClick={() => handleDelete(pl._id)}>Delete</button>} </td>
+                        <button className="btn btn-danger ms-2" onClick={() => handleDelete(pl._id)}><RiDeleteBin6Line/></button>} </td>
                 </tr>
             </tbody>
               )

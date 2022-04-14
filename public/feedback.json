@@ -1,0 +1,30 @@
+[
+    {
+        "img" : "https://i.ibb.co/S6L2k1n/man.jpg",
+        "name" : "David",
+        "email" : "david34@yahoo.com",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad quia similique.",
+        "rating"  : "✩✩✩✩✩"
+    },
+    {
+        "img" : "https://i.ibb.co/5MJY4LQ/man1.jpg",
+        "name" : "July",
+        "email" : "julya7@gmail.com",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad quia similique.",
+        "rating"  : "✩✩✩✩✩"
+    },
+    {
+        "img" : "https://i.ibb.co/3RL2dmH/man2.jpg",
+        "name" : "Nolan",
+        "email" : "Nolan02@gmail.com",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad quia similique.",
+        "rating"  : "✩✩✩✩✩"
+    },
+    {
+        "img" : "https://i.ibb.co/2g2RTk9/man3.jpg",
+        "name" : "Mark",
+        "email" : "markrober@yahoo.com",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad quia similique.",
+        "rating"  : "✩✩✩✩✩"
+    }
+]
