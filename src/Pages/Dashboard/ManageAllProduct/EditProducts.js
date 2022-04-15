@@ -41,11 +41,11 @@ const EditProducts = ({ openOrder, handleOrderClose, dataDelete }) => {
         seEditProduct(newProduct);
     }
 
-    const handleProductSubmit = e => {
+    const handleProductSubmit = (e) => {
         const productAdd = {
             ...editProduct
         }
-        fetch(`https://serene-everglades-89059.herokuapp.com/products`, {
+        fetch(`https://serene-everglades-89059.herokuapp.com/furniture`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

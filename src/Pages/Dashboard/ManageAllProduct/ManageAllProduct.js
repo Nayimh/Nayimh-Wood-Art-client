@@ -44,9 +44,9 @@ const ManageAllProduct = () => {
         <Table striped bordered hover variant="light">
           <thead>
             <tr className="text-center">
+              <th scope="col">Image</th>
               <th scope="col">Name</th>
               <th scope="col">Price</th>
-              <th scope="col">Image</th>
               <th scope="col">Description</th>
             
               <th scope="col">Action</th>
@@ -57,9 +57,9 @@ const ManageAllProduct = () => {
                 
                 <tbody key ={pl._id}>
                 <tr>
+                    <td><img src={pl?.img} style={{width:"60px", height:"60px", objectFit:"cover", borderRadius: "50%"}} alt="" /></td>
                     <td>{pl?.name}</td>
                     <td>{pl?.price}</td>
-                    <td><img src={pl?.img} style={{width:"100px", height:"100px", objectFit:"cover"}} alt="" /></td>
                     <td>{pl.desc}</td>
                     
                     <td className="text-center">

@@ -12,8 +12,10 @@ const Contact = () => {
         AOs.init();
       })
     return (
-        <div id='contact' className='container mt-5 pt-5 shadow-lg contact'>
-            <h1 id='head' className='cgHead mb-5'>Contact Us</h1>
+      <div id='contact' className='container mt-5 pt-5 shadow-lg contact'>
+        
+        <h1 id='head' className='cgHead '>Contact Us</h1>
+        <p className='text-center'>Be the first to know about our best deals!</p>
             <div className='row'>
                 
                 <div data-aos='fade-right' data-aos-duration='1700' className='col-lg-6 col-md-6 col-sm-12'>

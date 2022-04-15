@@ -8,24 +8,25 @@ import Footer from '../Footer/Footer';
 import AllHomeProducts from '../HomeProduct/AllHomeProducts/AllHomeProducts';
 import HomeRating from '../HomeRating/HomeRating';
 import NavMenu from '../NavMenu/NavMenu';
-// import Poster from '../Poster/Poster';
+// import Poster from "../Poster/Poster";
+
+
 
 const Home = () => {
-    return (
-        <div>
-            <NavMenu />
-            <Banner />
-            <SubBanner />
-            <hr />
-            <AllHomeProducts/>
-            {/* <Poster /> */}
-            <HomeRating/>
-            <About/>
-            <Contact /> 
-           
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <NavMenu />
+          <Banner />
+          <SubBanner />
+          <AllHomeProducts />
+          {/* <Poster/> */}
+          <HomeRating />
+          <About />
+          <Contact />
+          <Footer/>
+     
+    </div>
+  );
 };
 
 export default Home;

@@ -84,7 +84,10 @@ const Dashboard = (props) => {
                 
           </ListItem>
           
-          
+          <ListItem>
+            <Link className='dashLink' to={`/dashboard/rating`}><p style={{color: '#000', letterSpacing: '1px'}}>Ratings  <FcRating/> </p></Link>
+                
+            </ListItem>
         
             <ListItem>
             <Link className='dashLink' to={`/home`}><button className='btn' onClick={logout} style={{color: '#c2185b', letterSpacing: '1px'}}>LOGUT <FiLogOut/> </button></Link>

@@ -6,3 +6,7 @@
 .bg{
     background-color: rgb(149, 196, 218);
 }
+
+.storeh{
+    min-height: 100vmin;
+}

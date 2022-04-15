@@ -1,25 +1,32 @@
 import React from 'react';
-// import NavMenu from '../../Home/NavMenu/NavMenu';
-import MakeAdmin from '../MakeAdmin/MakeAdmin';
-import ManageAllOrder from '../ManageAllOrder/ManageAllOrder';
-import ManageAllProduct from '../ManageAllProduct/ManageAllProduct';
-import MyOrder from '../MyOrder/MyOrder';
-import AddNewProduct from '../AddNewProduct/AddNewProduct'
+import { Button, ButtonGroup } from 'react-bootstrap';
+import { Link, Outlet } from 'react-router-dom';
 
-import Ratings from '../Ratings/Ratings';
-import HomeRating from '../../Home/HomeRating/HomeRating';
+
 
 const TrialD = () => {
     return (
         <div>
-            {/* <NavMenu /> */}
-            <MakeAdmin />
-            <MyOrder />
-            <ManageAllOrder />
-            <ManageAllProduct />
-            <AddNewProduct />
-            <Ratings />
-            <HomeRating/>
+            <div className='text-center'>
+                <ButtonGroup aria-label="Basic example">
+                <Link to='/trial/all'><Button variant="secondary">All Product</Button></Link>
+                <Link to='/trial/feature'><Button variant="secondary">Featured</Button></Link>
+                <Link to='/trial/latest'><Button variant="secondary">Latest</Button></Link>
+  
+  
+  
+</ButtonGroup>
+               
+            </div>
+            <div>
+                <Outlet/>
+               
+            </div>
+            
+            
+           
+            
+         
         </div>
     );
 };

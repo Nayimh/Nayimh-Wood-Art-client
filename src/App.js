@@ -10,11 +10,16 @@ import ManageAllOrder from './Pages/Dashboard/ManageAllOrder/ManageAllOrder';
 import ManageAllProduct from './Pages/Dashboard/ManageAllProduct/ManageAllProduct';
 import MyOrder from './Pages/Dashboard/MyOrder/MyOrder';
 import Ratings from './Pages/Dashboard/Ratings/Ratings';
+
 import Login from './Pages/Home/Authentication/Login/Login';
 import PrivateRoute from './Pages/Home/Authentication/PrivateRoute/PrivateRoute';
 import Register from './Pages/Home/Authentication/Register/Register';
 import Home from './Pages/Home/Home/Home';
+// import AllHomeProducts from './Pages/Home/HomeProduct/AllHomeProducts/AllHomeProducts';
+import Feature from './Pages/Home/HomeProduct/Feature/Feature';
+import Letest from './Pages/Home/HomeProduct/Letest/Letest';
 import OrderHome from './Pages/Home/Order/OrderHome/OrderHome';
+import AllProduct from './Pages/Home/Store/StoreHome/AllProduct/AllProduct';
 import StoreHome from './Pages/Home/Store/StoreHome/StoreHome';
 
 function App() {
@@ -27,9 +32,15 @@ function App() {
             <Route path='/home' element={<Home />}/>
                
              
-            <Route path='/store' element={<StoreHome />} />
+            <Route path='/store' element={<StoreHome />} >
+            <Route path='all' element={ <AllProduct/> }/>
+              <Route path='feature' element={ <Feature/> }/>
+              <Route path='latest' element={ <Letest/> }/>
+            </Route>
             <Route path='/order/:id' element={<PrivateRoute><OrderHome /></PrivateRoute>} />
-          
+            
+           
+
             <Route path='/dashboard' element={ <PrivateRoute> <Dashboard/> </PrivateRoute> }>
               <Route path='makeAdmin' element={<AdminRoute> <MakeAdmin /> </AdminRoute>} />
               <Route path='manageAllProduct' element={<AdminRoute> <ManageAllProduct /> </AdminRoute>} />

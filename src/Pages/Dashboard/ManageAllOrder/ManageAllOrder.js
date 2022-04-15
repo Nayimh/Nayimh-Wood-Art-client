@@ -5,7 +5,7 @@ import useAuth from '../../../Firebase/Hooks/useAuth';
 import { TiTick } from 'react-icons/ti';
 
 import { RiDeleteBin6Line } from 'react-icons/ri';
-import { BiEdit } from 'react-icons/bi';
+// import { BiEdit } from 'react-icons/bi';
 
 const ManageAllOrder = () => {
 
@@ -96,7 +96,7 @@ const ManageAllOrder = () => {
                 
                 <tbody key ={pl._id}>
                       <tr style={{ letterSpacing: '1.5px', fontWeight: '600', color: 'coral' }}>
-                <td><img style={{width: '100px', objectFit: 'cover', borderRadius: '4px'}} src={pl?.img} alt="" /></td>
+                <td><img style={{width:"60px", height:"60px", objectFit:"cover", borderRadius: "50%"}} src={pl?.img} alt="" /></td>
                     <td>{pl.email}</td>
                     <td>{pl.name}</td>
                     <td>{pl.price}</td>

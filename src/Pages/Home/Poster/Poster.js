@@ -12,7 +12,7 @@ const Poster = () => {
       })
 
     return (
-        <div className='container poster mt-5 mb-5 w-75'>
+        <div className='container poster mt-5 mb-5 '>
            
                 <div className="row align-items-center">
                     <div className='col-lg-6 col-md-6 col-sm-12'>

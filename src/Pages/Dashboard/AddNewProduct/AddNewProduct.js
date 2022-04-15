@@ -61,7 +61,7 @@ const AddNewProduct = () => {
                 </Row>
 
                 <Form.Group as={Col}>
-                    <textarea className="form-control" name="description" onBlur={handleOnBlur} rows="3" placeholder="Item Description"></textarea>
+                    <textarea className="form-control" name="desc" onBlur={handleOnBlur} rows="3" placeholder="Item Description"></textarea>
                 </Form.Group>
                 
 

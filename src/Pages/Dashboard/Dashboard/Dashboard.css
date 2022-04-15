@@ -1,3 +1,9 @@
 .dashLink{
     text-decoration: none;
+    padding: 1px 3px;
+}
+
+.dashLink:hover{
+    box-shadow: 1px 1px 4px rgb(147, 219, 248);
+    padding: 1px 3px;
 }

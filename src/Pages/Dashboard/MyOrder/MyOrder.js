@@ -58,7 +58,7 @@ const MyOrder = () => {
                 
                 <tbody key ={pl._id}>
                 <tr style={{letterSpacing: '1.5px', fontWeight: '600', color: 'coral'}}>
-                    <td><img className='shadow-lg' style={{width: '100px', objectFit: 'cover', borderRadius: '4px'}} src={pl?.img} alt="" /></td>
+                    <td><img className='shadow-lg' style={{width: '80px', height: "80px" , objectFit: 'cover', borderRadius: '50px'}} src={pl?.img} alt="" /></td>
                     <td>{pl.email}</td>
                     <td>{pl.name}</td>
                     <td>{pl.price}</td>

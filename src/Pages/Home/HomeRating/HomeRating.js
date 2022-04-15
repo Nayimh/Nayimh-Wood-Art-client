@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import './HomeRating.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HomeRating = () => {
+
+             //animation
+ useEffect(() => {
+    AOS.init();
+ })
 
     const [ratings, setRatings] = useState([]);
   
@@ -22,8 +28,8 @@ const HomeRating = () => {
                 <div className='row'>
                 {ratings?.map(rating => 
                 <div className='col-lg-3 col-md-4 col-sm-6 col-xs-12 '>
-                        <Card className='rcard  mb-5' >     
-                        <Card.Img className='mx-auto mt-1' style={{width: "100px", borderRadius: "100%"}}  variant="top" src={rating?.img} />
+                        <Card data-aos="zoom-in-right" data-aos-duration="2000" className='rcard  mb-5' >     
+                        <Card.Img className='mx-auto mt-1' style={{width: "100px", height: "100px" , borderRadius: "100%"}}  variant="top" src={rating?.img} />
      
       <Card.Body>
                       <Card.Title> <h4 className='text-center'>  Name: { rating?.name } </h4> </Card.Title>

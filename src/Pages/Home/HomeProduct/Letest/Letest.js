@@ -5,9 +5,9 @@ import { Card } from "react-bootstrap";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+const Letest = () => {
 
-const Feature = () => {
-         //animation
+       //animation
  useEffect(() => {
     AOS.init();
  })
@@ -19,16 +19,16 @@ const Feature = () => {
             .then((res) => res.json())
             .then(dt => setProducts(dt)); 
     }, [])
-    
+
     return (
-      <div className='mt-5  mb-5'>
-        <div className="div">
-        <h1 className='text-center  cgHead' animation="wave">Explore our Exclusive Product</h1>
-          <p className='cgpara text-center mt-3'>Bring your vision to life with hand-curated collections, priced just right.</p>
-          </div>
+        <div className='mt-5  mb-5'>
+            <div className="div">
+        <h1 className='text-center  cgHead' animation="wave">Explore our Brand New Products</h1>
+                <p className='cgpara text-center mt-3'>Bring your vision to life with hand-curated collections, priced just right.</p>
+                </div>
         <div className='container mt-5'>
             <div className='row'>
-            {products?.slice(9, 13)?.reverse().map(product => 
+            {products?.slice(14, 20)?.reverse().map(product => 
             <div className='col-lg-3 col-md-4 col-sm-6 col-xs-12 '>
           <Card data-aos="zoom-in-up" data-aos-duration="2000" className='foodcard  mb-5' animation="wave">
   <Card.Img className="cardimg" variant="top" src={product?.img} />
@@ -61,4 +61,4 @@ const Feature = () => {
     );
 };
 
-export default Feature;
+export default Letest;
